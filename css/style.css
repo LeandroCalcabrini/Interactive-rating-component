@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Blue: hsl(213, 20%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+}
+
+.container-2card{
+display: none;
+}
+
+main{
+    height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 400px;
+    background-color: var(--Dark-Blue);
+    border-radius: 20px;
+}
+
+.container-card{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.container-card.inactive{
+    display: none;
+}
+
+.container-star{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.star{
+    width: 15px;
+}
+
+h1{
+    color: var(--White);
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+.text{
+    color: var(--Medium-Grey);
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.container-numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.number{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Medium-Grey);
+    cursor: pointer;
+}
+
+
+.number:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+    transition: 0.5s ease;
+}
+
+.number.active{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+
+.submit{
+    width: 100%;
+    text-align: center;
+    background-color: var(--Orange);
+    color: var(--White);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+}
+
+.submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+    transition: 0.5s ease all;
+}
+.container-2card.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.posnet img{
+    width: 100px;
+}
+
+.selected{
+    color: var(--Orange);
+    background-color: var(--Very-Dark-Blue);
+    padding: 7px;
+    border-radius: 30px;
+    font-weight: 300;
+    margin: 20px;
+}
+
+.container-thanks{
+    text-align: center;
+}
+
+.container-thanks h2{
+    color: var(--White);
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.container-thanks p{
+    color: var(--Light-Grey);
+    line-height: 20px;
+    margin: 0 5px;
+    padding-bottom: 10px;
+}
+
+
+@media(max-width:450px){
+    .card{
+        margin: 20px;
+    }
+}
